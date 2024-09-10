@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <title>賴致元的個人履歷</title>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.left-column {
+    background-color: #e8f1f1;
+    padding: 20px;
+}
+.right-column {
+    padding: 20px;
+}
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.name {
+    font-size: 24px;
+    color: #4a7a7a;
+    margin: 0 0 5px 0;
+}
+.title {
+    font-size: 16px;
+    color: #6b9999;
+    margin: 0 0 20px 0;
+}
+.section {
+    margin-bottom: 25px;
+}
+.section-title {
+    font-size: 18px;
+    color: #4a7a7a;
+    border-bottom: 2px solid #4a7a7a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contact-info {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.timeline {
+    position: relative;
+}
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #4a7a7a;
+    border-radius: 50%;
+}
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 15px;
+    width: 2px;
+    height: calc(100% - 15px);
+    background-color: #4a7a7a;
+}
+.timeline-item:last-child::after {
+    display: none;
+}
+.date {
+    font-weight: bold;
+    color: #4a7a7a;
+    margin-bottom: 5px;
+}
+.skill-chart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.skill-bar {
+    background-color: #d1e0e0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.skill-level {
+    height: 100%;
+    background-color: #4a7a7a;
+}
+.education-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.education-item {
+    display: flex;
+    align-items: center;
+}
+.education-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #4a7a7a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.education-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+.education-info {
+    flex-grow: 1;
+}
+.education-title {
+    font-size: 14px;
+    color: #4a7a7a;
+    margin-bottom: 3px;
+}
+.education-year {
+    font-size: 12px;
+    color: #6b9999;
+}
+.github-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4a7a7a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.github-button:hover {
+    background-color: #3a6a6a;
+}
+.link-button {
+    display: inline-block;
+    background-color: #4a7a7a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+.link-button:hover {
+    background-color: #3a6a6a;
+}
+
+@media (max-width: 768px) {
+    .resume {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .github-button {
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+    }
+    .skill-chart {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .section-title {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+<body>
+<a href="https://github.com/ChihYua" target="_blank" class="github-button">
+        GitHub
+</a>
+<div class="resume">
+    <div class="left-column">
+        <img src="78161.jpg" alt="賴致元的個人照片" class="profile-img">
+        <h1 class="name">賴致元</h1>
+        <h2 class="title">Chih-Yuan, Lai</h2>
+        
+        <div class="section">
+            <h3 class="section-title">個人資料</h3>
+            <div class="contact-info">
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    男 | 27歲 | 免役
+                </p>
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                    </svg>
+                    待業中
+                </p>
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    0905-219-121
+                </p>
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    friendly1774@gmail.com
+                </p>
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    台中市太平區
+                </p>
+                <p>
+                    <svg class="icon" viewBox="0 0 24 24" fill="#4a7a7a">
+                        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                    </svg>
+                    輕型機車駕照
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">專長</h3>
+            <div class="skill-chart">
+                <div>
+                    <div>Django程式設計</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+                <div>
+                    <div>ESG專案設計</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div>
+                    <div>網路爬蟲</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <div>line bot串接</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <div>Git/Github</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div>
+                    <div>MySQL</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">語文能力</h3>
+            <div class="skill-chart">
+                <div>
+                    <div>英文 (TOEIC: 440分)</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 50%;"></div></div>
+                </div>
+                <div>
+                    <div>韓文 (初中級)</div>
+                    <div class="skill-bar"><div class="skill-level" style="width: 40%;"></div></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 class="section-title">期望職稱</h3>
+                <div class="contact-info">
+                    <p>
+                    全端工程師
+                    <br>AI詠唱師
+                    <br>ESG專員
+                    <br>活動企劃
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right-column">
+        <div class="section">
+            <h3 class="section-title">個人簡介</h3>
+            <p>我的個性有點執著，對於感興趣的事物求知若渴，並想盡力去理解，因此報名了台中市政府與中興大學聯合舉辦的AI智慧數據分析及綠能實務運用班，並在短短的2個月內從無到有習得與熟練了網路爬蟲、網路部落格專案製作、MySQL和GCP的運用、與開放式AI的溝通等專業技能以及該領域的基本知識，目前也在自費學習韓文。此外，我也喜歡與他人溝通與合作，因此，除了在大學期間參加許多社團與協助舉辦多場大型活動外，在AI綠能班時還和同學合作共同製作了台股股票預測專案，並在其中主要負責協助問題的排除，以及最終成果的呈現，因此，有一定的狀況處理能力。</p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">學歷</h3>
+            <div class="education-chart">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        </svg>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-title">國立嘉義大學 森林暨自然資源學系碩士</div>
+                        <div class="education-year">2019/9 ~ 2022/1</div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        </svg>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-title">國立嘉義大學 森林暨自然資源學系學士</div>
+                        <div class="education-year">2015/9 ~ 2019/6</div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        </svg>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-title">國立臺中二中 普通科</div>
+                        <div class="education-year">2013/9 ~ 2015/6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">工作經驗</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2022/6 ~ 2024/5</div>
+                    <strong>中班店員</strong> - 古丁原味茶館(嘉義博愛店)
+                    <p>工作內容: 接待顧客、飲料製作、加料備料、煮茶、熊貓外送機與收銀機操作</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">其他經歷</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2024/7 ~ 2024/9</div>
+                    <strong>AI智慧數據分析及綠能實務運用班作品集</strong>
+                    <p>課程中我的所有作品</p>
+                    <a href="https://chihyua.github.io/myweb/" target="_blank" class="link-button">查看作品集</a>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2018/9 ~ 2019/6</div>
+                    <strong>嘉義大學108級畢聯會公關組</strong>
+                    <p>粉絲團發文與回應，贊助洽談<br>演講主持、活動企劃</p>
+                    <a href="https://www.facebook.com/NCYU.edu" target="_blank" class="link-button">查看粉絲專頁</a>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2017/9 ~ 2018/3</div>
+                    <strong>2018年嘉義大學森林週負責人</strong>
+                    <p>活動規劃、商品設計、合作洽談<br>粉絲專頁管理</p>
+                    <a href="https://www.facebook.com/NCYUForestWeek2022" target="_blank" class="link-button">查看活動頁面</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">自傳</h3>
+            <strong>家庭背景：</strong>
+            <p>您好，我是賴致元，出生於台中市的小康家庭，父親是餐廳的廚師，母親是從事關稅通報接洽，由於排行老二且有兩名手足，因此從小便擅長察言觀色和與他人溝通。</p>
+            <strong>學生時代：</strong>
+            <p>在學生時期，我是屬於偏科嚴重的學生，因此擅長將精力專注於某一事物上，且只要我有破釜沉舟的決心，是可以顯著克服這一問題的，在學生時期就有兩次克服萬難的經驗。
+            <br>也因為偏科嚴重，因此大學時期，我就讀的是對生物、化學較為要求的嘉義大學森林暨自然資源學系，而由於喜歡與他人溝通聊天，因此大學及研究所的專題是朝著林業的人文與政策的方向去設計的。也因該時期訓練，對於紙本的格式會有一定的自我要求，對於相關的軟體(如Word、PowerPoint等)也有一定的熟稔。而由於從事過問卷調查、深度訪談等研究，因此具有一定的問卷、訪綱的設計能力以及數據的分析能力。</p>
+            <strong> 自我進修：</strong>
+            <p>由於我對於自我害羞的個性有自知之明，因此，在大學時期經常去參加需與他人互動的社團，如口語傳播藝術社與畢聯會等，以訓練自己的口條和在他人面前表達的膽量，並協助舉辦了多場活動，並擔任主持、公關和負責人，也曾在生意興隆的飲料店學習如何與他人應對，和訓練自己的做事速度。
+            <br>此外，由於對感興趣的事物求知若渴，目前也自費在學習第二外語（韓語），若有時間，也想繼續增強我其他的外語能力。
+            <br>近期也參與了，由臺中市政府勞工局與中興大學聯合舉辦的AI智慧數據分析及綠能實務運用班，為期兩個月，以此學習與AI、ESG相關的產業知識、技術，以精進自我的實力，並於2024/9/5結訓。</p>
+            <strong>工作態度：</strong>
+            <p>在一年多職場磨練，以及幾十年學校訓練，細心、負責、溝通合作、全力以赴，是我的職場信條，不懼困難、樂於學習、穩步成長。</p>
+            <strong>感謝的話：</strong>
+            <p>感謝貴公司願意撥空耐心閱讀我的履歷！懇請給予面試機會，如果有幸承蒙貴公司錄用，我將全力以赴，貢獻所學，展現最優的績效。</p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const skillBars = document.querySelectorAll('.skill-level');
+    skillBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.width = width;
+            bar.style.transition = 'width 1s ease-in-out';
+        }, 300);
+    });
+});
+</script>
+
+</body></html>
